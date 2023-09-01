@@ -1,2 +1,0 @@
-# jhonathanqz.github.io
-io
