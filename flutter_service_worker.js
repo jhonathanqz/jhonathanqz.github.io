@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "fdd51ed34dac5b9588188e5717571cb7",
+  "assets/AssetManifest.json": "ee659f5bad4c16dadada9ca0f4a697b1",
 "assets/assets/earth.gif": "f80ce927bec216080660de02ca450266",
-"assets/assets/eu.png": "fb8b461ea9a5d7f82fea8b5356d34660",
+"assets/assets/eu.png": "f3848749fbd3841ce15a072f0cb1b8aa",
 "assets/assets/eu1.png": "2460721a258bd21e45025047315465a3",
 "assets/assets/fonts/agustina.otf": "7b9833076716a8d14eec0cf885a3153c",
 "assets/assets/fonts/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
@@ -22,6 +22,8 @@ const RESOURCES = {
 "assets/assets/logos/javascript.png": "dba85593d652fc65a0ba72f448d31206",
 "assets/assets/logos/mssql.png": "39a552cb3490aaf5db556889cd764be5",
 "assets/assets/logos/mysql.png": "2ed28ffa98f913792942fe86e617553f",
+"assets/assets/logos/node.jpg": "c3b3af28c9d48fe33ae81b35923c337b",
+"assets/assets/logos/nodejs.jpg": "4bad5f07ce38e365019a6afe3db498e9",
 "assets/assets/logos/php.png": "8366f5ce423896878694252af7cc30f2",
 "assets/assets/logos/wordpress.png": "db23584942e4fba3d1bc40527a175e18",
 "assets/assets/projects/alcoolGasolina.jpg": "18f94ce17f9c3c0cc15623b83185de7f",
@@ -62,9 +64,9 @@ const RESOURCES = {
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "796a4468ef92db2996b726ef6d343162",
-"/": "796a4468ef92db2996b726ef6d343162",
-"main.dart.js": "94f112dd2150ac76412c68cd0821ec46",
+"index.html": "a268eb7eb327dee1cb9266d3dc88c857",
+"/": "a268eb7eb327dee1cb9266d3dc88c857",
+"main.dart.js": "8df655b364c8ce82beb13e48106ac600",
 "manifest.json": "fc7ab5d9dcbef44cc28d01c52d6132b1",
 "version.json": "e5360c0840b2676ef1f6987022c564c0"
 };
