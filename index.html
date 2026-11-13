@@ -1,58 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
+  <base href="/">
 
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jhonathan Queiroz — Senior Flutter Engineer e Mobile Architect. Apps offline-first, CI/CD e sistemas de pagamento (TEF, Stone, PagSeguro). Mais de 90 apps entregues.">
+  <meta name="author" content="Jhonathan Queiroz">
+  <meta name="theme-color" content="#060A13">
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jhonathan Queiroz — Senior Flutter Engineer">
+  <meta property="og:description" content="Mobile Architect · Offline-First · CI/CD · Payment Systems · 90+ apps entregues.">
+
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_portfolio">
+  <meta name="apple-mobile-web-app-title" content="Jhonathan Queiroz">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>flutter_portfolio</title>
+  <title>Jhonathan Queiroz — Senior Flutter Engineer</title>
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "723172789";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <style>
+    html, body { margin: 0; height: 100%; background: #060A13; }
+    #loader {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 22px;
+      background: #060A13; transition: opacity .5s ease; z-index: 10;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: #8D9AB5; font-size: 13px; letter-spacing: 2px;
+    }
+    #loader.hide { opacity: 0; pointer-events: none; }
+    .ring {
+      width: 54px; height: 54px; border-radius: 50%;
+      border: 3px solid #1E2942; border-top-color: #4FC3F7;
+      border-right-color: #2EE6A6; animation: spin .9s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
 </head>
 <body>
+  <div id="loader">
+    <div class="ring"></div>
+    <div>JHONATHAN QUEIROZ</div>
+  </div>
   <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
+    window.addEventListener('flutter-first-frame', function () {
+      var loader = document.getElementById('loader');
+      loader.classList.add('hide');
+      setTimeout(function () { loader.remove(); }, 600);
     });
   </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
